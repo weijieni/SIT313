@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>iCrowdTask Sign Up</title>
+        <link rel="stylesheet" href="4.1p.css">
+    </head>
+    <body>
+
+      <form action="/register" method="POST">
+      
+        <h1>Create an iCrowdTask Account</h1>
+        
+        <fieldset>
+          <label for="fname">First Name*</label>
+          <input type="text" id="fname" name="fname" required>
+
+          <label for="lname">Last Name*</label>
+          <input type="text" id="lname" name="lname" required>
+
+          <label for="mail">Email*</label>
+          <input type="email" id="mail" name="mail" required>
+          
+          <label for="password">Password*</label>
+          <input type="password" id="password" name="password" required>
+
+          <label for="cf_password">Confirm Password*</label>
+          <input type="password" id="cf_password" name="cf_password" required>
+        
+        <label for="country">Country of residence*</label>
+        <select id="country" name="country" required>
+	        <option>Choose from list</option>
+          <optgroup label="Asia">
+            <option value="China">China</option>
+            <option value="Japan">Japan</option>
+            <option value="Korea">Korea</option>
+          </optgroup>
+          <optgroup label="Oceania">
+            <option value="Australia">Australia</option>
+            <option value="New Zealand">New Zealand</option>
+          </optgroup>
+          <optgroup label="Europe">
+            <option value="England">England</option>
+            <option value="France">France</option>
+          </optgroup>
+          <optgroup label="North America">
+            <option value="US">United State</option>
+            <option value="Canada">Canada</option>
+          </optgroup>
+        </select>
+        
+          <label for="address">Address*</label>
+          <textarea id="address" name="address" required></textarea>
+        
+          <label for="city">City*</label>
+          <input type="text" id="city" name="city" required>
+          
+          <label for="state">State, Province or Region*</label>
+          <input type="text" id="state" name="state" required>
+          
+          <label for="poscode">ZIP / Postal code</label>
+          <input type="text" id="poscode" name="poscode">
+
+          <label for="mobile">Mobile phone number</label>
+          <input type="text" id="mobile" name="mobile">
+        
+        </fieldset>
+        <button type="submit" value="Submit">Sign Up</button>
+      </form>
+      
+    </body>
+</html>
+</html>
