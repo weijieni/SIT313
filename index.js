@@ -26,7 +26,7 @@ app.use(cookieSession({
 }));
 
 
-app.get('/', (req, res) => {
+app.get('/login', (req, res) => {
 	res.sendFile(__dirname + "/login.html");
 });
 
